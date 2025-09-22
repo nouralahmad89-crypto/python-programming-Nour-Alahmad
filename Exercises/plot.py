@@ -37,7 +37,7 @@ plt.title("cos(x)");
 fig, ax = plt.subplots(1, 2, dpi=150, figsize=(10, 4))
 
 rng = np.random.RandomState(42)
-# randn - draws random number from normal distribution
+#randn - draws random number from normal distribution
 data_normal_dist = rng.randn(1000)
 
 ax[0].hist(data_normal_dist, bins=30, alpha=.5)
@@ -48,5 +48,9 @@ sc = ax[1].scatter(x=rng.randn(100), y=rng.randn(100), c= rng.randn(100), alpha=
 fig.colorbar(sc)
 ax[1].set(title="Bubble chart", xlabel="x", ylabel="y")
 
-#plt.savefig("../assets/beautiful_plots.png", transparent=True, facecolor="white")
+plt.savefig("../assets/beautiful_plots.png", transparent=True, facecolor="white")
 plt.show()
+
+
+
+
